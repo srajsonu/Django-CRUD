@@ -1,8 +1,11 @@
 from django.http import HttpResponse
+from .models import Question
 
 
 def index(request):
-    return HttpResponse("Hello, world. cc5f52c9 is the polls index.")
+    latest_quest_list = Question.objects.order_by('-pub_date')[:5]
+    output = ', '.join([q.question_text for q in latest_quest_list])
+    return HttpResponse(output)
 
 def owner(request):
        return HttpResponse("Hello, world. 198dd5fb is the polls index.")
