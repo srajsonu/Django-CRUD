@@ -5,6 +5,7 @@ from django.views.generic import TemplateView
 app_name='hello'
 urlpatterns = [
     path('', TemplateView.as_view(template_name='hello/main.html')),
-    path('cookie', views.cookie),
-    path('sessfun', views.session),
+    path('polls', views.cookie),
+    path('hello', views.session),
+    path('polls/owner', views.owner),
 ]

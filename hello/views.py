@@ -22,3 +22,6 @@ def session(request):
         del request.session['num_of_vis']
 
     return HttpResponse('view count='+str(num_of_vis))
+
+def owner(request):
+    return HttpResponse("Hello, world. d465f14a is the polls index.")
