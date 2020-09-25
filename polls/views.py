@@ -22,7 +22,7 @@ def index(request):
 
 
 def owner(request):
-    return HttpResponse("Hello, world. 198dd5fb is the polls index.")
+    return HttpResponse("Hello, world. d465f14a is the polls index.")
 
 
 # def detail(request, question_id):
@@ -76,4 +76,3 @@ class DetailView(generic.DetailView):
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
-
