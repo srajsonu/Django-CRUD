@@ -9,7 +9,6 @@ from autos.forms import MakeForm
 
 # Create your views here.
 
-
 class MainView(LoginRequiredMixin, View):
     def get(self, request):
         mc = Make.objects.all().count()
@@ -29,7 +28,7 @@ class MakeView(LoginRequiredMixin, View):
 # We use reverse_lazy() because we are in "constructor attribute" code
 # that is run before urls.py is completely loaded
 class MakeCreate(LoginRequiredMixin, View):
-    template = 'autos/make_form.html'
+    template = 'autos/breed_form.html'
     success_url = reverse_lazy('autos:all')
 
     def get(self, request):
@@ -54,7 +53,7 @@ class MakeCreate(LoginRequiredMixin, View):
 class MakeUpdate(LoginRequiredMixin, View):
     model = Make
     success_url = reverse_lazy('autos:all')
-    template = 'autos/make_form.html'
+    template = 'autos/breed_form.html'
 
     def get(self, request, pk):
         make = get_object_or_404(self.model, pk=pk)
@@ -76,7 +75,7 @@ class MakeUpdate(LoginRequiredMixin, View):
 class MakeDelete(LoginRequiredMixin, View):
     model = Make
     success_url = reverse_lazy('autos:all')
-    template = 'autos/make_confirm_delete.html'
+    template = 'autos/breed_confirm_delete.html'
 
     def get(self, request, pk):
         make = get_object_or_404(self.model, pk=pk)
