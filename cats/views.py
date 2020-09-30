@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import UpdateView, CreateView, DeleteView
 
-from autos.forms import MakeForm
+from cats.forms import BreedForm
 from cats.models import *
 
 class MainView(LoginRequiredMixin, View):
@@ -30,18 +30,18 @@ class BreedCreate(LoginRequiredMixin, View):
     success_url = reverse_lazy('cats:all')
 
     def get(self, request):
-        form = MakeForm()
+        form = BreedForm()
         ctx = {'form': form}
 
         return render(request, self.template, ctx)
 
     def post(self, request):
-        form = MakeForm(request.POST)
+        form = BreedForm(request.POST)
         if not form.is_valid():
             ctx = {'form': form}
             return render(request, self.template, ctx)
 
-        make = form.save()
+        form.save()
         return redirect(self.success_url)
 
 class BreedUpate(LoginRequiredMixin, View):
@@ -51,14 +51,14 @@ class BreedUpate(LoginRequiredMixin, View):
 
     def get(self, request, pk):
         breed = get_object_or_404(self.model, pk=pk)
-        form = MakeForm(instance=breed)
+        form = BreedForm(instance=breed)
         ctx = {'form': form}
 
         return render(request, self.template, ctx)
 
     def post(self, request, pk):
         breed = get_object_or_404(self.model, pk=pk)
-        form = MakeForm(request.POST, instance=breed)
+        form = BreedForm(request.POST, instance=breed)
 
         if not form.is_valid():
             ctx = {'form': form}
@@ -74,7 +74,7 @@ class BreedDelete(LoginRequiredMixin, View):
 
     def get(self, request, pk):
         make = get_object_or_404(self.model, pk=pk)
-        form = MakeForm(instance=make)
+        form = BreedForm(instance=make)
         ctx = {'make': make}
         return render(request, self.template, ctx)
 
