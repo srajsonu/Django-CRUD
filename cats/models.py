@@ -1,9 +1,27 @@
+from django.core.validators import MinLengthValidator
 from django.db import models
 
 # Create your models here.
 
 class Breed(models.Model):
-    pass
+    name = models.CharField(
+        max_length=200,
+        validators=[MinLengthValidator(2, "Breed must be greater than 1 character")]
+    )
+
+    def __str__(self):
+        return self.name
 
 class Cat(models.Model):
-    pass
+    nickname = models.CharField(
+        max_length=200,
+        validators=[MinLengthValidator(2, "Breed must be greater than 1 character")]
+    )
+
+    weight = models.PositiveBigIntegerField()
+    foods = models.CharField(max_length=200)
+    breed = models.ForeignKey('Breed', on_delete=models.CASCADE, null=False)
+
+    def __str__(self):
+        return self.nickname
+
