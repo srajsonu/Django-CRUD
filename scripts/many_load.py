@@ -32,7 +32,7 @@ def run():
         iso, created = ISO.objects.get_or_create(name=row[10])
 
         try:
-            area = int(row[6])
+            area = float(row[6])
         except:
             area = None
 
