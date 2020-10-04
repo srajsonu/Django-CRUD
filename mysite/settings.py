@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
     # Extensions - installed with pip3 / requirements.txt
     'django_extensions',
-    'crispy_forms',
+    #'crispy_forms',
     'rest_framework',
     'social_django',
     'home.apps.HomeConfig',
@@ -63,7 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'social_django.middleware.SocialAuthExceptionMiddleware',  # Add
+    #'social_django.middleware.SocialAuthExceptionMiddleware',  # Add
 ]
 
 ROOT_URLCONF = 'mysite.urls'
