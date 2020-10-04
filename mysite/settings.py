@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'social_django',
     'home.apps.HomeConfig',
-    'ads.apps.AdsConfig'
+    'ads.apps.AdsConfig',
+    'unesco.apps.UnescoConfig'
 ]
 
 # When we get to crispy forms :)
