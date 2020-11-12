@@ -44,7 +44,11 @@ INSTALLED_APPS = [
 
     # Extensions - installed with pip3 / requirements.txt
     'django_extensions',
+<<<<<<< HEAD
     'crispy_forms',
+=======
+    # 'django_crispy_forms',
+>>>>>>> 8c3158b41ac49eb2635c0701ef677d1b74359c8e
     'rest_framework',
     'social_django',
     'home.apps.HomeConfig',

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c46b79f0-2ff7-45b1-a720-d2e94d0a055b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ads/migrations/0002_auto_20201112_1615.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ads/templates/ads/ad_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Django-Test-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Django-Test-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/templates/ads/ad_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ads/templates/ads/ad_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/templates/ads/ad_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/ads/templates/ads/ad_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ads/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ads/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="d7f2dac8-69ed-47d5-95c1-fb87c8cdf767" />
+  <component name="ProjectId" id="1huSD2vPIc9A0zRZsuESC3OCV5T" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/unesco" />
+      <recent name="$PROJECT_DIR$/hello/templates/hello" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Django-Test-master" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Django-Test-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="mysite.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c46b79f0-2ff7-45b1-a720-d2e94d0a055b" name="Default Changelist" comment="" />
+      <created>1600859361164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600859361164</updated>
+      <workItem from="1600859362336" duration="1301000" />
+      <workItem from="1600921556081" duration="309000" />
+      <workItem from="1600932666539" duration="8188000" />
+      <workItem from="1601010619496" duration="8878000" />
+      <workItem from="1601098356379" duration="1806000" />
+      <workItem from="1601180937192" duration="3584000" />
+      <workItem from="1601302139197" duration="788000" />
+      <workItem from="1601354043993" duration="3241000" />
+      <workItem from="1601444540791" duration="7788000" />
+      <workItem from="1601530541968" duration="713000" />
+      <workItem from="1601619422376" duration="252000" />
+      <workItem from="1601622911753" duration="4098000" />
+      <workItem from="1601704001114" duration="1391000" />
+      <workItem from="1601790315562" duration="808000" />
+      <workItem from="1601810304188" duration="5439000" />
+      <workItem from="1601876491555" duration="266000" />
+      <workItem from="1601966168788" duration="510000" />
+      <workItem from="1602076763521" duration="196000" />
+      <workItem from="1602145920904" duration="151000" />
+      <workItem from="1602220063189" duration="591000" />
+      <workItem from="1602304724438" duration="254000" />
+      <workItem from="1602390838819" duration="325000" />
+      <workItem from="1602475522873" duration="359000" />
+      <workItem from="1602563728660" duration="359000" />
+      <workItem from="1602662575188" duration="271000" />
+      <workItem from="1602735005536" duration="995000" />
+      <workItem from="1602822312869" duration="288000" />
+      <workItem from="1602950205985" duration="431000" />
+      <workItem from="1602998066974" duration="1658000" />
+      <workItem from="1603042919582" duration="245000" />
+      <workItem from="1603079393301" duration="2094000" />
+      <workItem from="1603191844752" duration="472000" />
+      <workItem from="1603256966407" duration="987000" />
+      <workItem from="1603288627820" duration="493000" />
+      <workItem from="1603349846082" duration="630000" />
+      <workItem from="1603432503799" duration="534000" />
+      <workItem from="1603520113829" duration="599000" />
+      <workItem from="1603601565937" duration="447000" />
+      <workItem from="1603693548924" duration="1125000" />
+      <workItem from="1603774245409" duration="5389000" />
+      <workItem from="1603822196930" duration="514000" />
+      <workItem from="1603860910542" duration="1488000" />
+      <workItem from="1603949236262" duration="906000" />
+      <workItem from="1603969117059" duration="591000" />
+      <workItem from="1603996604981" duration="45000" />
+      <workItem from="1604406778881" duration="938000" />
+      <workItem from="1604554621770" duration="8000" />
+      <workItem from="1605108718093" duration="762000" />
+      <workItem from="1605165881868" duration="60000" />
+      <workItem from="1605196918479" duration="1904000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601876542462">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1601876542462" />
+    <state width="1398" height="360" key="GridCell.Tab.0.bottom" timestamp="1605199393318">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="360" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605199393318" />
+    <state width="1398" height="360" key="GridCell.Tab.0.center" timestamp="1605199393317">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="360" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605199393317" />
+    <state width="1398" height="360" key="GridCell.Tab.0.left" timestamp="1605199393317">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="360" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605199393317" />
+    <state width="1398" height="360" key="GridCell.Tab.0.right" timestamp="1605199393318">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="360" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605199393318" />
+    <state width="1398" height="280" key="GridCell.Tab.1.bottom" timestamp="1601062685462">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601062685462" />
+    <state width="1398" height="280" key="GridCell.Tab.1.center" timestamp="1601062685461">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1601062685461" />
+    <state width="1398" height="280" key="GridCell.Tab.1.left" timestamp="1601062685461">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1601062685461" />
+    <state width="1398" height="280" key="GridCell.Tab.1.right" timestamp="1601062685462">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1601062685462" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1603287075508">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1603287075508" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1603125268223">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1603125268223" />
+  </component>
+</project>
