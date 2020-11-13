@@ -10,7 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46b79f0-2ff7-45b1-a720-d2e94d0a055b" name="Default Changelist" comment="" />
+    <list default="true" id="c46b79f0-2ff7-45b1-a720-d2e94d0a055b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Django-Test-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Django-Test-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ads/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +30,17 @@
         <option value="Python Script" />
         <option value="HTML File" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -47,7 +63,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -139,6 +155,7 @@
       <workItem from="1605108718093" duration="762000" />
       <workItem from="1605165881868" duration="60000" />
       <workItem from="1605196918479" duration="1904000" />
+      <workItem from="1605254898064" duration="2676000" />
     </task>
     <servers />
   </component>
@@ -165,22 +182,26 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1601876542462" />
-    <state width="1398" height="360" key="GridCell.Tab.0.bottom" timestamp="1605202613675">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="355" key="GridCell.Tab.0.bottom" timestamp="1605286466175">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605202613675" />
-    <state width="1398" height="360" key="GridCell.Tab.0.center" timestamp="1605202613672">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="360" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605203610020" />
+    <state width="1398" height="355" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1605286466175" />
+    <state width="1398" height="355" key="GridCell.Tab.0.center" timestamp="1605286466173">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605202613672" />
-    <state width="1398" height="360" key="GridCell.Tab.0.left" timestamp="1605202613672">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="360" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605203610019" />
+    <state width="1398" height="355" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1605286466173" />
+    <state width="1398" height="355" key="GridCell.Tab.0.left" timestamp="1605286466169">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605202613672" />
-    <state width="1398" height="360" key="GridCell.Tab.0.right" timestamp="1605202613674">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1398" height="360" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605203610018" />
+    <state width="1398" height="355" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1605286466169" />
+    <state width="1398" height="355" key="GridCell.Tab.0.right" timestamp="1605286466174">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1398" height="360" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605202613674" />
+    <state width="1398" height="360" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605203610019" />
+    <state width="1398" height="355" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1605286466174" />
     <state width="1398" height="280" key="GridCell.Tab.1.bottom" timestamp="1601062685462">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -197,10 +218,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="280" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1601062685462" />
-    <state x="229" y="100" key="SettingsEditor" timestamp="1603287075508">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="229" y="102" key="SettingsEditor" timestamp="1605289901784">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1603287075508" />
+    <state x="229" y="102" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1605289901784" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1603125268223">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

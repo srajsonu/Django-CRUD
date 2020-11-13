@@ -13,11 +13,12 @@ from ads.owner import OwnerListView, OwnerDetailView, OwnerCreateView, OwnerUpda
 class AdListView(OwnerListView):
     model = Ad
     # By convention:
-    # template_name = "myarts/ad_list.html"
+    template_name = "ads/ad_list.html"
 
 
 class AdDetailView(OwnerDetailView):
     model = Ad
+    template_name = 'ads/ad_detail.html'
 
     def get(self, request, pk):
         x = Forum.objects.get(id=pk)
@@ -27,8 +28,8 @@ class AdDetailView(OwnerDetailView):
         return render(request, self.template_name, context)
 
 
-class AdCreateView(OwnerCreateView):
-    template_name = 'ads/ad_detail.html'
+class AdCreateView(LoginRequiredMixin, View):
+    template_name = 'ads/ad_form.html'
     success_url = reverse_lazy('ads:all')
 
     def get(self, request, pk=None):
@@ -43,6 +44,7 @@ class AdCreateView(OwnerCreateView):
             ctx = {'form': form}
             return render(request, self.template_name, ctx)
 
+        # Add owner to the model before saving
         pic = form.save(commit=False)
         pic.owner = self.request.user
         pic.save()
@@ -50,9 +52,9 @@ class AdCreateView(OwnerCreateView):
 
 
 
-class AdUpdateView(OwnerUpdateView):
+class AdUpdateView(LoginRequiredMixin, View):
     template_name = 'ads/ad_form.html'
-    success_url = reverse_lazy('pics:all')
+    success_url = reverse_lazy('ads:all')
 
     def get(self, request, pk):
         pic = get_object_or_404(Ad, id=pk, owner=self.request.user)
@@ -86,12 +88,26 @@ def stream_file(request, pk):
     response.write(ad.picture)
     return response
 
+class ForumCreateView(OwnerCreateView):
+    model = Forum
+    fields = ['title', 'text']
+    template_name = "ads/ad_form.html"
+
+class ForumUpdateView(OwnerUpdateView):
+    model = Forum
+    fields = ['title', 'text']
+    template_name = "ads/ad_form.html"
+
+class ForumDeleteView(OwnerDeleteView):
+    model = Forum
+    template_name = "ads/ad_delete.html"
+
 class CommentCreateView(LoginRequiredMixin, View):
     def post(self, request, pk) :
         f = get_object_or_404(Forum, id=pk)
         comment = Comment(text=request.POST['comment'], owner=request.user, forum=f)
         comment.save()
-        return redirect(reverse('forums:forum_detail', args=[pk]))
+        return redirect(reverse('ads:ad_detail', args=[pk]))
 
 class CommentDeleteView(OwnerDeleteView):
     model = Comment
