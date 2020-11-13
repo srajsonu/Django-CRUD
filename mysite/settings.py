@@ -43,10 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
 
     # Extensions - installed with pip3 / requirements.txt
-    'django_extensions',
-    'crispy_forms',
-    'rest_framework',
-    'social_django',
+    #'django_extensions',
+    # 'crispy_forms',
+    # 'rest_framework',
+    # 'social_django',
     'home.apps.HomeConfig',
     'ads.apps.AdsConfig',
     'unesco.apps.UnescoConfig'
