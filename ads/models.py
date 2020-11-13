@@ -33,6 +33,8 @@ class Forum(models.Model) :
     text = models.TextField()
     owner = models.ForeignKey(settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE, related_name='forums_owned')
+
+    #user = models.ForeignKey('User', on_delete=models.CASCADE)
     comments = models.ManyToManyField(settings.AUTH_USER_MODEL,
         through='Comment', related_name='forum_comments')
 
@@ -48,7 +50,7 @@ class Comment(models.Model) :
         validators=[MinLengthValidator(3, "Comment must be greater than 3 characters")]
     )
 
-    forum = models.ForeignKey(Ad, on_delete=models.CASCADE)
+    forum = models.ForeignKey(Forum, on_delete=models.CASCADE)
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     created_at = models.DateTimeField(auto_now_add=True)
