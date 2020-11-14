@@ -6,7 +6,7 @@ from django.views import View
 
 import ads
 from ads.forms import CreateForm, CommentForm
-from ads.models import Ad, Forum, Comment
+from ads.models import Ad, Comment
 from ads.owner import OwnerListView, OwnerDetailView, OwnerCreateView, OwnerUpdateView, OwnerDeleteView
 
 
@@ -21,7 +21,7 @@ class AdDetailView(OwnerDetailView):
     template_name = 'ads/ad_detail.html'
 
     def get(self, request, pk):
-        x = Forum.objects.get(id=pk)
+        x = Ad.objects.get(id=pk)
         comments = Comment.objects.filter(forum=x).order_by('-updated_at')
         comment_form = CommentForm()
         context = {'forum': x, 'comments': comments, 'comment_form': comment_form}
@@ -88,23 +88,23 @@ def stream_file(request, pk):
     response.write(ad.picture)
     return response
 
-class ForumCreateView(OwnerCreateView):
-    model = Forum
-    fields = ['title', 'text']
-    template_name = "ads/ad_form.html"
-
-class ForumUpdateView(OwnerUpdateView):
-    model = Forum
-    fields = ['title', 'text']
-    template_name = "ads/ad_form.html"
-
-class ForumDeleteView(OwnerDeleteView):
-    model = Forum
-    template_name = "ads/ad_delete.html"
+# class ForumCreateView(OwnerCreateView):
+#     model = Forum
+#     fields = ['title', 'text']
+#     template_name = "ads/ad_form.html"
+#
+# class ForumUpdateView(OwnerUpdateView):
+#     model = Forum
+#     fields = ['title', 'text']
+#     template_name = "ads/ad_form.html"
+#
+# class ForumDeleteView(OwnerDeleteView):
+#     model = Forum
+#     template_name = "ads/ad_delete.html"
 
 class CommentCreateView(LoginRequiredMixin, View):
     def post(self, request, pk) :
-        f = get_object_or_404(Forum, id=pk)
+        f = get_object_or_404(Ad, id=pk)
         comment = Comment(text=request.POST['comment'], owner=request.user, forum=f)
         comment.save()
         return redirect(reverse('ads:ad_detail', args=[pk]))
