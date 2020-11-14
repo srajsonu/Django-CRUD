@@ -27,7 +27,7 @@ APP_NAME = 'ChucksList'  # Add
 SECRET_KEY = 'g$iqqu&*mw4_sg3(#ld0sqaalxebel&168^yj%i&sgrw(fmn@w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -43,10 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
 
     # Extensions - installed with pip3 / requirements.txt
-    #'django_extensions',
-    # 'crispy_forms',
-    # 'rest_framework',
-    # 'social_django',
+    'django_extensions',
+    'crispy_forms',
+    'rest_framework',
+    'social_django',
     'home.apps.HomeConfig',
     'ads.apps.AdsConfig',
     'unesco.apps.UnescoConfig'
