@@ -9,6 +9,7 @@ class Ad(models.Model) :
             validators=[MinLengthValidator(2, "Title must be greater than 2 characters")]
     )
     text = models.TextField()
+    price = models.IntegerField()
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     #Picture
